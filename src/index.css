@@ -28,4 +28,11 @@
   .container-custom {
     @apply max-w-7xl mx-auto;
   }
+  
+  /* Anchor offset for fixed header navigation */
+  .anchor-offset {
+    @apply block relative;
+    top: -100px;
+    visibility: hidden;
+  }
 } 

@@ -327,6 +327,14 @@ const Products = () => {
         {/* Products Grid */}
         <section className="section-padding">
           <div className="container-custom">
+            {/* Product Category Anchors */}
+            <div id="grille-panels" className="anchor-offset"></div>
+            <div id="wave-panels" className="anchor-offset"></div>
+            <div id="great-wall-panels" className="anchor-offset"></div>
+            <div id="air-vent-louvers" className="anchor-offset"></div>
+            <div id="solid-panels" className="anchor-offset"></div>
+            <div id="custom-profiles" className="anchor-offset"></div>
+            
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredProducts.map((product) => (
                 <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">

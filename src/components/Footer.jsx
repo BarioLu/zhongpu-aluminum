@@ -28,21 +28,21 @@ const Footer = () => {
   ]
 
   const productCategories = [
-    { name: 'Aluminum Grille Panel', path: '/products' },
-    { name: 'Wave-shaped Panel', path: '/products' },
-    { name: 'Great Wall Panel', path: '/products' },
-    { name: 'Air Vent Louvers', path: '/products' },
-    { name: 'Solid Aluminum Panel', path: '/products' },
-    { name: 'Custom Profiles (OEM)', path: '/products' }
+    { name: 'Aluminum Grille Panel', path: '/products#grille-panels' },
+    { name: 'Wave-shaped Panel', path: '/products#wave-panels' },
+    { name: 'Great Wall Panel', path: '/products#great-wall-panels' },
+    { name: 'Air Vent Louvers', path: '/products#air-vent-louvers' },
+    { name: 'Solid Aluminum Panel', path: '/products#solid-panels' },
+    { name: 'Custom Profiles (OEM)', path: '/products#custom-profiles' }
   ]
 
   const services = [
-    { name: 'OEM/ODM Services', path: '/products' },
-    { name: 'Custom Design', path: '/products' },
-    { name: 'Technical Support', path: '/contact' },
-    { name: 'Quality Assurance', path: '/quality' },
-    { name: 'Sample Service', path: '/contact' },
-    { name: 'Global Shipping', path: '/about' }
+    { name: 'OEM/ODM Services', path: '/about#services' },
+    { name: 'Custom Design', path: '/about#capabilities' },
+    { name: 'Technical Support', path: '/contact#technical-support' },
+    { name: 'Quality Assurance', path: '/quality#quality-process' },
+    { name: 'Sample Service', path: '/contact#sample-request' },
+    { name: 'Global Shipping', path: '/about#global-reach' }
   ]
 
   const socialLinks = [

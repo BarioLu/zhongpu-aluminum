@@ -202,7 +202,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Information */}
-      <section className="section-padding">
+      <section id="technical-support" className="section-padding">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -236,7 +236,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Form and Map */}
-      <section className="section-padding bg-gray-50">
+      <section id="sample-request" className="section-padding bg-gray-50">
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}

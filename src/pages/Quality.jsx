@@ -175,7 +175,7 @@ const Quality = () => {
       </section>
 
       {/* Quality Process */}
-      <section className="section-padding">
+      <section id="quality-process" className="section-padding">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
