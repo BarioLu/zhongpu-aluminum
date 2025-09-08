@@ -40,9 +40,15 @@
     <!-- Additional SEO Meta Tags -->
     <meta name="theme-color" content="#1e40af" />
     <meta name="msapplication-TileColor" content="#1e40af" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="Zhongpu Aluminum" />
+    
+    <!-- Additional SEO improvements -->
+    <meta name="geo.region" content="CN-GD" />
+    <meta name="geo.placename" content="Foshan, Guangdong, China" />
+    <meta name="geo.position" content="23.0288;113.1053" />
+    <meta name="ICBM" content="23.0288, 113.1053" />
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://zhongpu-alu.com/" />
@@ -57,10 +63,12 @@
       console.log('Google Analytics loaded from HTML head');
     </script>
     
-    <!-- Preconnect to external domains -->
+    <!-- Preconnect to external domains for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://wa.me">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -139,6 +147,21 @@
           }
         }
       }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zhongpu-alu.com/"
+        }
+      ]
     }
     </script>
   </head>
