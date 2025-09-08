@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import GoogleAnalytics from './components/GoogleAnalytics'
 import Home from './pages/Home'
 import About from './pages/About'
 import Products from './pages/Products'
@@ -17,7 +16,6 @@ function App() {
   return (
     <HelmetProvider>
       <Router>
-        <GoogleAnalytics />
         <div className="min-h-screen flex flex-col">
           <Navbar />
           <main className="flex-grow">
