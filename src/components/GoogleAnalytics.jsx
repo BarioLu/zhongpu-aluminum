@@ -4,8 +4,9 @@ const GoogleAnalytics = () => {
   const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID
 
   useEffect(() => {
-    // 只在生产环境中加载GA
-    if (GA_MEASUREMENT_ID && import.meta.env.PROD) {
+    // 在有GA_MEASUREMENT_ID的情况下加载GA（包括预览环境）
+    if (GA_MEASUREMENT_ID) {
+      console.log('Loading Google Analytics with ID:', GA_MEASUREMENT_ID)
       // 动态加载gtag脚本
       const script1 = document.createElement('script')
       script1.async = true
@@ -29,6 +30,10 @@ const GoogleAnalytics = () => {
       window.gtag = function() {
         window.dataLayer.push(arguments)
       }
+      
+      console.log('Google Analytics loaded successfully')
+    } else {
+      console.log('GA_MEASUREMENT_ID not found:', GA_MEASUREMENT_ID)
     }
   }, [GA_MEASUREMENT_ID])
 
