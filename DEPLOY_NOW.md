@@ -34,6 +34,7 @@ VITE_EMAILJS_CONTACT_TEMPLATE_ID = template_contact
 VITE_EMAILJS_QUICK_INQUIRY_TEMPLATE_ID = template_quick_inquiry
 VITE_EMAILJS_PUBLIC_KEY = lxg3--SargfI9rJNI
 VITE_CONTACT_EMAIL = zhongpualu@outlook.com
+VITE_GA_MEASUREMENT_ID = G-XXXXXXXXXX (从Google Analytics获取)
 ```
 
 然后点击 **"Deploy"** 按钮！

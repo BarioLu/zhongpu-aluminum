@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import SEOHead from '../components/SEOHead'
 import Breadcrumb from '../components/Breadcrumb'
 import { sendContactForm, initEmailJS } from '../config/emailjs'
+import { trackEvent } from '../components/GoogleAnalytics'
 import { 
   MapPin, 
   Phone, 
@@ -88,6 +89,13 @@ const Contact = () => {
       const result = await sendContactForm(formData)
       
       if (result.success) {
+        // Google Analytics事件追踪
+        trackEvent('contact_form_submit', {
+          event_category: 'engagement',
+          event_label: 'contact_form',
+          value: 1
+        })
+        
         // 显示成功消息
         setIsSubmitted(true)
         
