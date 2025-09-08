@@ -22,7 +22,7 @@ Disallow: /src/
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://zhongpu-aluminum.com/sitemap.xml
+Sitemap: https://zhongpu-alu.com/sitemap.xml
 
 # Contact information
 # For questions about this robots.txt, contact: zhongpualu@outlook.com 
