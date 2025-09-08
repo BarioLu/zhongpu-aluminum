@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 
 const GoogleAnalytics = () => {
-  const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID
+  const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID || 'G-HYV8ELQTRR'
 
   useEffect(() => {
     // 在有GA_MEASUREMENT_ID的情况下加载GA（包括预览环境）
