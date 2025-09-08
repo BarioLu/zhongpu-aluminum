@@ -1,0 +1,28 @@
+# Robots.txt for Zhongpu Aluminum - Professional Aluminum Profile Manufacturer
+User-agent: *
+Allow: /
+
+# Allow all important resources
+Allow: /images/
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.gif
+Allow: /*.css
+Allow: /*.js
+
+# Disallow sensitive or unnecessary areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /*.pdf$ # Prevent indexing of internal PDFs
+Disallow: /node_modules/
+Disallow: /src/
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://zhongpu-aluminum.com/sitemap.xml
+
+# Contact information
+# For questions about this robots.txt, contact: zhongpualu@outlook.com 

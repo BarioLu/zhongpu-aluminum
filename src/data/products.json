@@ -1,0 +1,35 @@
+[
+  {
+    "id": "product001",
+    "name": "Aluminum Grille Panel",
+    "chineseName": "铝合金格栅板",
+    "category": "Decorative",
+    "description": "Lightweight, easy to install and suitable for modern architectural ceilings.",
+    "material": "6063-T5 aluminum",
+    "finish": "Anodized / Powder Coated / Wood Grain",
+    "thickness": "0.7mm - 5.0mm",
+    "image": "/grille-panel.png"
+  },
+  {
+    "id": "product002",
+    "name": "Great Wall Aluminum Panel",
+    "chineseName": "铝合金长城板",
+    "category": "Wall Cladding",
+    "description": "Perfect for interior and exterior decorative walls, with a clean and modern design.",
+    "material": "6063-T5 aluminum",
+    "finish": "Wood grain / Brushed / PVDF",
+    "thickness": "0.7mm - 5.0mm",
+    "image": "/great-wall-panel.jpg"
+  },
+  {
+    "id": "product003",
+    "name": "Aluminum Louver Vent",
+    "chineseName": "风口百叶",
+    "category": "Ventilation",
+    "description": "Ventilation-friendly, corrosion-resistant and easy to install in commercial spaces.",
+    "material": "Aluminum Alloy",
+    "finish": "Anodized / Spray Coating",
+    "thickness": "0.7mm - 5.0mm",
+    "image": "/air-vent-louvers.jpg"
+  }
+]
