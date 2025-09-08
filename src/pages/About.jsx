@@ -100,7 +100,7 @@ const About = () => {
       </section>
 
       {/* Company Overview */}
-      <section id="services" className="section-padding">
+      <section id="company-overview" className="section-padding">
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -146,7 +146,7 @@ const About = () => {
       </section>
 
       {/* Company Statistics */}
-      <section id="global-reach" className="section-padding bg-gray-50">
+      <section id="company-stats" className="section-padding bg-gray-50">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">

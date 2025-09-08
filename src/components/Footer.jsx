@@ -37,12 +37,12 @@ const Footer = () => {
   ]
 
   const services = [
-    { name: 'OEM/ODM Services', path: '/about#services' },
+    { name: 'OEM/ODM Services', path: '/about#capabilities' },
     { name: 'Custom Design', path: '/about#capabilities' },
     { name: 'Technical Support', path: '/contact#technical-support' },
     { name: 'Quality Assurance', path: '/quality#quality-process' },
     { name: 'Sample Service', path: '/contact#sample-request' },
-    { name: 'Global Shipping', path: '/about#global-reach' }
+    { name: 'Company Profile', path: '/about#company-overview' }
   ]
 
   const socialLinks = [
