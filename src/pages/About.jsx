@@ -1,6 +1,7 @@
 import React from 'react'
 import SEOHead from '../components/SEOHead'
 import Breadcrumb from '../components/Breadcrumb'
+import { buildSiteUrl, COMPANY } from '../config/company'
 import { 
   MapPin, 
   Factory, 
@@ -16,14 +17,14 @@ const About = () => {
   const aboutStructuredData = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    "name": "About Zhongpu Aluminum",
-    "description": "Learn about Zhongpu Aluminum, a professional decorative aluminum profile manufacturer in Foshan, China with 5+ years of experience.",
-    "url": "https://zhongpu-aluminum.com/about",
+    "name": `About ${COMPANY.name}`,
+    "description": "Learn about Zhongpu Aluminum, a custom aluminum wall panel manufacturer and aluminum ceiling panel supplier in Foshan, China.",
+    "url": buildSiteUrl('/about'),
     "mainEntity": {
       "@type": "Organization",
-      "name": "Zhongpu Aluminum",
+      "name": COMPANY.name,
       "foundingDate": "2020",
-      "description": "Professional decorative aluminum profile manufacturer"
+      "description": "Custom aluminum wall panel manufacturer and aluminum ceiling panel supplier"
     }
   }
 
@@ -71,10 +72,10 @@ const About = () => {
   return (
     <>
       <SEOHead 
-        title="About Us - Professional Aluminum Profile Manufacturer"
-        description="Learn about Zhongpu Aluminum, a professional decorative aluminum profile manufacturer in Foshan, China with 5+ years of experience and ISO certification."
-        keywords="about Zhongpu Aluminum, aluminum profile manufacturer history, Foshan aluminum company, China aluminum manufacturer about"
-        url="https://zhongpu-aluminum.com/about"
+        title="About Zhongpu Aluminum - Aluminum Wall Panel Manufacturer & OEM Factory"
+        description="Learn about Zhongpu Aluminum, a custom aluminum wall panel manufacturer, aluminum ceiling panel supplier, and OEM factory serving decorative commercial projects."
+        keywords="aluminum wall panel manufacturer, aluminum ceiling panel supplier, decorative aluminum panel factory, custom aluminum panel OEM, about Zhongpu Aluminum, manufacturer, supplier, factory, OEM, custom"
+        url={buildSiteUrl('/about')}
         structuredData={aboutStructuredData}
       />
       <div>

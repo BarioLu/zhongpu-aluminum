@@ -10,9 +10,15 @@ const SEOHead = ({
   type = 'website',
   structuredData 
 }) => {
-  const fullTitle = title ? `${title} | Zhongpu Aluminum` : 'Zhongpu Aluminum - Professional Decorative Aluminum Profile Manufacturer'
-  const fullDescription = description || 'Leading decorative aluminum profile manufacturer in Foshan, China. 5+ years experience, ISO certified, OEM/ODM services.'
-  const fullKeywords = keywords || 'aluminum profile manufacturer, decorative aluminum profiles, aluminum grille panels, wave panels, Foshan aluminum, China aluminum manufacturer'
+  const fullTitle = title
+    ? `${title} | Zhongpu Aluminum`
+    : 'Custom Aluminum Wall & Ceiling Panel Manufacturer | Zhongpu Aluminum'
+  const fullDescription =
+    description ||
+    'Zhongpu Aluminum is a custom aluminum wall panel manufacturer and aluminum ceiling panel supplier in China, providing aluminum wave panel, aluminum fluted panel, and decorative aluminum panel solutions for commercial projects.'
+  const fullKeywords =
+    keywords ||
+    'aluminum wave panel, aluminum fluted panel, decorative aluminum panel, aluminum wall panel manufacturer, aluminum ceiling panel supplier, manufacturer, supplier, factory, OEM, custom'
   const fullImage = image || 'https://zhongpu-aluminum.com/logo.png'
   const fullUrl = url || 'https://zhongpu-aluminum.com'
 

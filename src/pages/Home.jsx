@@ -1,34 +1,17 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import SEOHead from '../components/SEOHead'
-import { sendQuickInquiry, initEmailJS } from '../config/emailjs'
-import { 
-  Award, 
-  Globe, 
-  Factory, 
-  Shield, 
-  MessageCircle, 
-  Download,
-  ArrowRight,
-  CheckCircle
-} from 'lucide-react'
+import { buildSiteUrl, COMPANY } from '../config/company'
+import { Award, Globe, Factory, Shield, MessageCircle } from 'lucide-react'
 
 const Home = () => {
   // 初始化EmailJS
-  useEffect(() => {
-    initEmailJS()
-  }, [])
-
-  const [isQuickInquirySubmitted, setIsQuickInquirySubmitted] = useState(false)
-  const [isQuickInquiryLoading, setIsQuickInquiryLoading] = useState(false)
-  const [quickInquiryError, setQuickInquiryError] = useState('')
-
   const homeStructuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Zhongpu Aluminum - Professional Decorative Aluminum Profile Manufacturer",
     "description": "Leading decorative aluminum profile manufacturer in Foshan, China. 5+ years experience, ISO certified, OEM/ODM services.",
-    "url": "https://zhongpu-aluminum.com",
+    "url": buildSiteUrl(),
     "mainEntity": {
       "@type": "Organization",
       "name": "Zhongpu Aluminum",
@@ -74,18 +57,10 @@ const Home = () => {
           setIsQuickInquirySubmitted(false)
         }, 5000)
       } else {
-        // 根据错误类型提供更具体的错误消息
-        if (result.error && result.error.includes('network')) {
-          setQuickInquiryError('Network error. Please check your connection and try again.')
-        } else if (result.error && result.error.includes('invalid')) {
-          setQuickInquiryError('Invalid email configuration. Please contact us directly.')
-        } else {
-          setQuickInquiryError('Failed to send inquiry. Please try again or contact us directly at zhongpualu@outlook.com')
-        }
+        setQuickInquiryError('Failed to send inquiry. Please try again or contact us directly.')
       }
     } catch (error) {
-      console.error('Quick inquiry submission error:', error)
-      setQuickInquiryError('Network error. Please check your connection and try again.')
+      setQuickInquiryError('An error occurred. Please try again or contact us directly.')
     } finally {
       setIsQuickInquiryLoading(false)
     }
@@ -161,117 +136,25 @@ const Home = () => {
         <section className="relative bg-gradient-to-r from-primary-600 to-primary-700 text-white">
           <div className="absolute inset-0 bg-black opacity-20"></div>
           <div className="relative container-custom section-padding">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              {/* Left Content */}
-              <div className="text-center lg:text-left">
-                <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-                  Professional Decorative Aluminum Profile Manufacturer
-                </h1>
-                <p className="text-xl mb-8 text-primary-100 max-w-3xl lg:max-w-none mx-auto lg:mx-0">
-                  Leading manufacturer of high-quality decorative aluminum profiles in Foshan, China. 5+ years experience, ISO certified, OEM/ODM services.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                  <a
-                    href="https://wa.me/8618957133982"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-primary"
-                  >
-                    Get Quote Now
-                  </a>
-                  <Link to="/products" className="btn-secondary">
-                    View Products
-                  </Link>
-                </div>
-              </div>
-
-              {/* Right - Quick Inquiry Form */}
-              <div className="bg-white rounded-lg shadow-xl p-8 text-gray-900">
-                <h3 className="text-2xl font-bold mb-6 text-center">Quick Inquiry</h3>
-                
-                {isQuickInquirySubmitted ? (
-                  <div className="text-center text-green-600 font-medium text-lg py-8">
-                    <CheckCircle className="w-12 h-12 mx-auto mb-4 text-green-500" />
-                    Thank you! We'll contact you soon.
-                  </div>
-                ) : (
-                  <form onSubmit={handleQuickInquiry} className="space-y-4">
-                    {quickInquiryError && (
-                      <div className="bg-red-100 border border-red-200 text-red-800 px-4 py-3 rounded relative" role="alert">
-                        <strong className="font-bold">Error!</strong>
-                        <span className="block sm:inline"> {quickInquiryError}</span>
-                      </div>
-                    )}
-                    
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name *</label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        required
-                        className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-600"
-                        placeholder="Your name"
-                      />
-                    </div>
-                    
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email *</label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                        className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-600"
-                        placeholder="your.email@example.com"
-                      />
-                    </div>
-                    
-                    <div>
-                      <label htmlFor="requirements" className="block text-sm font-medium text-gray-700 mb-1">Requirements *</label>
-                      <textarea
-                        id="requirements"
-                        name="requirements"
-                        rows="4"
-                        required
-                        className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-600"
-                        placeholder="Tell us about your project requirements..."
-                      ></textarea>
-                    </div>
-                    
-                    <button
-                      type="submit"
-                      disabled={isQuickInquiryLoading}
-                      className="w-full bg-primary-600 hover:bg-primary-700 disabled:bg-primary-400 text-white font-medium py-3 px-4 rounded-lg transition-colors duration-200"
-                    >
-                      {isQuickInquiryLoading ? (
-                        <div className="flex items-center justify-center">
-                          <svg className="animate-spin h-5 w-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                          </svg>
-                          Sending...
-                        </div>
-                      ) : (
-                        'Send Inquiry'
-                      )}
-                    </button>
-                  </form>
-                )}
-                
-                <div className="mt-4 text-center">
-                  <p className="text-sm text-gray-500">
-                    Or contact us directly: 
-                    <a 
-                      href="https://wa.me/8618957133982" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-primary-600 hover:text-primary-700 ml-1"
-                    >
-                      WhatsApp
-                    </a>
-                  </p>
-                </div>
+            <div className="text-center">
+              <h1 className="text-4xl lg:text-6xl font-bold mb-6">
+                Professional Decorative Aluminum Profile Manufacturer
+              </h1>
+              <p className="text-xl mb-8 text-primary-100 max-w-3xl mx-auto">
+                Leading manufacturer of high-quality decorative aluminum profiles in Foshan, China. 5+ years experience, ISO certified, OEM/ODM services.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="https://wa.me/8618957133982"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary"
+                >
+                  Get Quote Now
+                </a>
+                <Link to="/products" className="btn-secondary">
+                  View Products
+                </Link>
               </div>
             </div>
           </div>

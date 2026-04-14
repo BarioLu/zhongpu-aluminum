@@ -1,6 +1,7 @@
 import React from 'react'
 import SEOHead from '../components/SEOHead'
 import Breadcrumb from '../components/Breadcrumb'
+import { buildSiteUrl, COMPANY } from '../config/company'
 import { 
   Shield, 
   CheckCircle, 
@@ -15,13 +16,13 @@ const Quality = () => {
   const qualityStructuredData = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    "name": "Quality Control - Zhongpu Aluminum",
-    "description": "Learn about Zhongpu Aluminum's comprehensive quality control processes, ISO certification, and testing standards for aluminum profiles.",
-    "url": "https://zhongpu-aluminum.com/quality",
+    "name": `Quality Control - ${COMPANY.name}`,
+    "description": "Learn about Zhongpu Aluminum's quality control processes for decorative aluminum wall panel, ceiling panel, and custom OEM projects.",
+    "url": buildSiteUrl('/quality'),
     "mainEntity": {
       "@type": "Organization",
-      "name": "Zhongpu Aluminum",
-      "description": "ISO certified aluminum profile manufacturer with comprehensive quality control"
+      "name": COMPANY.name,
+      "description": "Aluminum wall panel manufacturer with comprehensive quality control"
     }
   }
   const qualityProcess = [
@@ -147,10 +148,10 @@ const Quality = () => {
   return (
     <>
       <SEOHead 
-        title="Quality Control & ISO Certification - Aluminum Profile Testing"
-        description="Zhongpu Aluminum maintains the highest quality standards with ISO certification, comprehensive testing processes, and quality control for all aluminum profiles."
-        keywords="aluminum profile quality control, ISO certification aluminum, aluminum testing standards, quality assurance Foshan, aluminum profile inspection"
-        url="https://zhongpu-aluminum.com/quality"
+        title="Quality Control for Decorative Aluminum Panel Manufacturing"
+        description="Quality control standards for custom decorative aluminum panel, aluminum wall panel, and aluminum ceiling panel manufacturing, including inspection and project quality assurance."
+        keywords="decorative aluminum panel quality control, aluminum wall panel manufacturer quality, aluminum ceiling panel supplier inspection, custom aluminum OEM quality assurance, manufacturer, supplier, factory, OEM, custom"
+        url={buildSiteUrl('/quality')}
         structuredData={qualityStructuredData}
       />
       <div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import SEOHead from '../components/SEOHead'
 import Breadcrumb from '../components/Breadcrumb'
+import { buildSiteUrl, COMPANY } from '../config/company'
 import { 
   Palette, 
   Shield, 
@@ -15,12 +16,12 @@ const SurfaceFinishing = () => {
   const surfaceFinishingStructuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Surface Finishing Services - Zhongpu Aluminum",
-    "description": "Professional aluminum surface finishing services including anodizing, powder coating, PVDF coating, wood grain finish, and brushed finish.",
-    "url": "https://zhongpu-aluminum.com/surface-finishing",
+    "name": `Surface Finishing Services - ${COMPANY.name}`,
+    "description": "Professional aluminum surface finishing services for decorative aluminum wall panel, ceiling panel, and facade panel projects.",
+    "url": buildSiteUrl('/surface-finishing'),
     "provider": {
       "@type": "Organization",
-      "name": "Zhongpu Aluminum"
+      "name": COMPANY.name
     },
     "serviceType": ["Anodizing", "Powder Coating", "PVDF Coating", "Wood Grain Finish", "Brushed Finish"]
   }
@@ -153,10 +154,10 @@ const SurfaceFinishing = () => {
   return (
     <>
       <SEOHead 
-        title="Surface Finishing Services - Anodizing, Powder Coating & More"
-        description="Professional aluminum surface finishing services including anodizing, powder coating, PVDF coating, wood grain finish, and brushed finish. Expert finishing solutions in Foshan, China."
-        keywords="aluminum surface finishing, anodizing services, powder coating aluminum, PVDF coating, wood grain finish aluminum, brushed aluminum finish, Foshan surface treatment"
-        url="https://zhongpu-aluminum.com/surface-finishing"
+        title="Decorative Aluminum Panel Surface Finishing - Powder Coating, PVDF & Wood Grain"
+        description="Surface finishing services for decorative aluminum panel, aluminum wall panel, and aluminum ceiling panel projects, including powder coating, PVDF, anodizing, and wood grain."
+        keywords="decorative aluminum panel finish, aluminum wall panel powder coating, aluminum ceiling panel supplier finish, corrugated aluminum facade panel coating, wood grain aluminum panel, manufacturer, supplier, factory, OEM, custom"
+        url={buildSiteUrl('/surface-finishing')}
         structuredData={surfaceFinishingStructuredData}
       />
       <div>
