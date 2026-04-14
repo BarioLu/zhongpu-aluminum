@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://zhongpu-alu.com/</loc>
+    <lastmod>2024-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://zhongpu-alu.com/logo.png</image:loc>
+      <image:caption>Zhongpu Aluminum Company Logo</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://zhongpu-alu.com/about</loc>
+    <lastmod>2024-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zhongpu-alu.com/factory.jpg</image:loc>
+      <image:caption>Zhongpu Aluminum Factory in Foshan China</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://zhongpu-alu.com/products</loc>
+    <lastmod>2024-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zhongpu-alu.com/grille-panel.png</image:loc>
+      <image:caption>Aluminum Grille Panel Products</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://zhongpu-alu.com/surface-finishing</loc>
+    <lastmod>2024-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zhongpu-alu.com/ral-color-chart.jpg</image:loc>
+      <image:caption>RAL Color Chart for Aluminum Surface Finishing</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://zhongpu-alu.com/quality</loc>
+    <lastmod>2024-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://zhongpu-alu.com/certification-images.png</image:loc>
+      <image:caption>ISO Quality Certification</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://zhongpu-alu.com/contact</loc>
+    <lastmod>2024-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://zhongpu-alu.com/factory-map.png</image:loc>
+      <image:caption>Zhongpu Aluminum Factory Location Map</image:caption>
+    </image:image>
+  </url>
+</urlset> 
