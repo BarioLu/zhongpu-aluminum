@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react'
+import React, { useState } from 'react'
 import optimizedImages from '../data/optimized-images.json'
 
 export const getOptimizedImageSources = (src) => optimizedImages[src] || null
@@ -11,6 +11,7 @@ const OptimizedImage = ({ src, alt, onError, ...props }) => {
     if (useOptimized) {
       setUseOptimized(false)
       event.currentTarget.src = src
+      return
     }
 
     if (onError) {
