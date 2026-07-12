@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+﻿import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
   Facebook,
@@ -12,6 +12,7 @@ import {
   Youtube,
 } from 'lucide-react'
 import { COMPANY } from '../config/company'
+import OptimizedImage from './OptimizedImage'
 
 const quickLinks = [
   { name: 'Home', path: '/' },
@@ -55,7 +56,7 @@ const qrCodes = [
   },
   {
     name: 'WhatsApp',
-    image: '/whatapp.png',
+    image: '/whatapp.jpg',
     description: 'Scan to start a WhatsApp conversation',
   },
 ]
@@ -199,7 +200,7 @@ const FooterMain = () => {
                         </button>
                       </div>
                       <div className="h-32 w-32 overflow-hidden rounded-lg bg-gray-100">
-                        <img src={qr.image} alt={`${qr.name} QR code`} className="h-full w-full object-cover" />
+                        <OptimizedImage src={qr.image} alt={`${qr.name} QR code`} className="h-full w-full object-cover" />
                       </div>
                       <p className="mt-2 text-center text-xs text-gray-600">{qr.description}</p>
                     </div>

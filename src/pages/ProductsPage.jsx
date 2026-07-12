@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react'
+﻿import React, { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
   CheckCircle,
@@ -10,6 +10,7 @@ import {
 } from 'lucide-react'
 import Breadcrumb from '../components/Breadcrumb'
 import SEOHead from '../components/SEOHead'
+import OptimizedImage from '../components/OptimizedImage'
 import { COMPANY, buildSiteUrl } from '../config/company'
 
 const categories = [
@@ -248,7 +249,7 @@ const ProductsPage = () => {
                   className="overflow-hidden rounded-lg bg-white shadow-md transition-shadow hover:shadow-lg"
                 >
                   <div className="h-48 overflow-hidden bg-gray-200">
-                    <img src={product.image} alt={product.name} className="h-full w-full object-cover" />
+                    <OptimizedImage src={product.image} alt={product.name} className="h-full w-full object-cover" />
                   </div>
                   <div className="p-6">
                     <h3 className="mb-3 text-xl font-semibold text-gray-900">{product.name}</h3>
@@ -323,7 +324,7 @@ const ProductsPage = () => {
                   className="group overflow-hidden rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-lg"
                 >
                   <div className="relative w-full overflow-hidden bg-gray-200" style={{ aspectRatio: '2400/626' }}>
-                    <img
+                    <OptimizedImage
                       src={item.image}
                       alt={item.name}
                       className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"

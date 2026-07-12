@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+﻿import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { 
   Phone, 
@@ -61,7 +61,7 @@ const Footer = () => {
     },
     {
       name: 'WhatsApp',
-      image: '/whatapp.png',
+      image: '/whatapp.jpg',
       description: 'Scan to add WhatsApp contact',
       color: 'bg-green-600 hover:bg-green-700'
     }
@@ -163,7 +163,7 @@ const Footer = () => {
             {/* Copyright */}
             <div className="text-gray-400 text-sm">
               <p>&copy; {currentYear} Zhongpu Aluminum. All rights reserved.</p>
-              <p className="mt-1">Quality Assured • 5+ Years Experience</p>
+              <p className="mt-1">Quality Assured 鈥?5+ Years Experience</p>
             </div>
 
             {/* Social Links */}
@@ -238,10 +238,10 @@ const Footer = () => {
         <div className="container-custom">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
             <div className="text-gray-500 text-xs">
-              <p>Professional aluminum profile manufacturer • Export to 30+ countries • OEM/ODM services available</p>
+              <p>Professional aluminum profile manufacturer 鈥?Export to 30+ countries 鈥?OEM/ODM services available</p>
             </div>
             <div className="text-gray-500 text-xs">
-              <p>Made with ❤️ in Foshan, China</p>
+              <p>Made with 鉂わ笍 in Foshan, China</p>
             </div>
           </div>
         </div>

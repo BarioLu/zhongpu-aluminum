@@ -1,7 +1,8 @@
-import React from 'react'
+﻿import React from 'react'
 import { Link } from 'react-router-dom'
 import { Award, Factory, FileText, Globe, MessageCircle, Palette, Ruler, Shield } from 'lucide-react'
 import SEOHead from '../components/SEOHead'
+import OptimizedImage from '../components/OptimizedImage'
 import { buildSiteUrl, COMPANY } from '../config/company'
 
 const advantages = [
@@ -175,7 +176,7 @@ const HomePage = () => {
               {hotProducts.map((product) => (
                 <article key={product.name} className="flex h-full flex-col overflow-hidden rounded-lg bg-white shadow-md">
                   <div className="relative h-48 overflow-hidden bg-gray-200">
-                    <img
+                    <OptimizedImage
                       src={product.image}
                       alt={product.name}
                       className="h-full w-full object-cover"

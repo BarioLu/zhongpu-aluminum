@@ -1,8 +1,9 @@
-import React from 'react'
+﻿import React from 'react'
 import { Link } from 'react-router-dom'
 import { CheckCircle, MessageCircle } from 'lucide-react'
 import Breadcrumb from '../components/Breadcrumb'
 import SEOHead from '../components/SEOHead'
+import OptimizedImage from '../components/OptimizedImage'
 import { buildSiteUrl, COMPANY } from '../config/company'
 
 const useCases = [
@@ -44,7 +45,7 @@ const AluminumCeilingPanelPage = () => {
               </div>
             </div>
             <div className="overflow-hidden rounded-3xl bg-white/10">
-              <img src="/grille-panel-1.png" alt="Aluminum ceiling panel supplier project sample" className="h-full w-full object-cover" />
+              <OptimizedImage src="/grille-panel-1.png" alt="Aluminum ceiling panel supplier project sample" className="h-full w-full object-cover" />
             </div>
           </div>
         </section>

@@ -1,8 +1,9 @@
-import React from 'react'
+﻿import React from 'react'
 import { Link } from 'react-router-dom'
 import { CheckCircle, MessageCircle } from 'lucide-react'
 import Breadcrumb from '../components/Breadcrumb'
 import SEOHead from '../components/SEOHead'
+import OptimizedImage from '../components/OptimizedImage'
 import { buildSiteUrl, COMPANY } from '../config/company'
 
 const highlights = [
@@ -61,7 +62,7 @@ const AluminumWavePanelPage = () => {
               </div>
             </div>
             <div className="overflow-hidden rounded-3xl bg-white/10">
-              <img src="/wave-panel-1.jpg" alt="Aluminum wave panel manufacturer product sample" className="h-full w-full object-cover" />
+              <OptimizedImage src="/wave-panel-1.jpg" alt="Aluminum wave panel manufacturer product sample" className="h-full w-full object-cover" />
             </div>
           </div>
         </section>

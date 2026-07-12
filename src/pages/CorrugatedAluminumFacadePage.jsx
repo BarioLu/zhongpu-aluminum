@@ -1,8 +1,9 @@
-import React from 'react'
+﻿import React from 'react'
 import { Link } from 'react-router-dom'
 import { CheckCircle, MessageCircle } from 'lucide-react'
 import Breadcrumb from '../components/Breadcrumb'
 import SEOHead from '../components/SEOHead'
+import OptimizedImage from '../components/OptimizedImage'
 import { buildSiteUrl, COMPANY } from '../config/company'
 
 const facadePoints = [
@@ -69,7 +70,7 @@ const CorrugatedAluminumFacadePage = () => {
               </div>
             </div>
             <div className="overflow-hidden rounded-3xl bg-white/10">
-              <img
+              <OptimizedImage
                 src="/wave-panel.jpg"
                 alt="Corrugated aluminum facade panel sample"
                 className="h-full w-full object-cover"

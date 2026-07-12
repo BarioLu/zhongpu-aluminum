@@ -1,11 +1,12 @@
 import React from 'react'
 import SEOHead from '../components/SEOHead'
+import OptimizedImage from '../components/OptimizedImage'
 import Breadcrumb from '../components/Breadcrumb'
 import { buildSiteUrl, COMPANY } from '../config/company'
-import { 
-  Palette, 
-  Shield, 
-  Zap, 
+import {
+  Palette,
+  Shield,
+  Zap,
   Droplets,
   Download,
   MessageCircle,
@@ -153,7 +154,7 @@ const SurfaceFinishing = () => {
 
   return (
     <>
-      <SEOHead 
+      <SEOHead
         title="Decorative Aluminum Panel Surface Finishing - Powder Coating, PVDF & Wood Grain"
         description="Surface finishing services for decorative aluminum panel, aluminum wall panel, and aluminum ceiling panel projects, including powder coating, PVDF, anodizing, and wood grain."
         keywords="decorative aluminum panel finish, aluminum wall panel powder coating, aluminum ceiling panel supplier finish, corrugated aluminum facade panel coating, wood grain aluminum panel, manufacturer, supplier, factory, OEM, custom"
@@ -165,7 +166,7 @@ const SurfaceFinishing = () => {
         <div className="container-custom">
           <Breadcrumb items={[{name: 'Surface Finishing'}]} />
         </div>
-        
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-primary-600 to-primary-700 text-white">
         <div className="absolute inset-0 bg-black opacity-20"></div>
@@ -175,7 +176,7 @@ const SurfaceFinishing = () => {
               Surface Finishing
             </h1>
             <p className="text-xl mb-8 text-primary-100 max-w-3xl mx-auto">
-              Professional surface treatment solutions to enhance the appearance, 
+              Professional surface treatment solutions to enhance the appearance,
               durability, and performance of your aluminum profiles
             </p>
           </div>
@@ -205,7 +206,7 @@ const SurfaceFinishing = () => {
                       {process.name}
                     </h3>
                   </div>
-                  
+
                   <p className="text-gray-600 mb-4">
                     {process.description}
                   </p>
@@ -297,9 +298,9 @@ const SurfaceFinishing = () => {
                 RAL Color Chart
               </h3>
               <div className="bg-gray-200 rounded-lg overflow-hidden shadow-lg" style={{width: '100%', maxWidth: '600px', height: '290px'}}>
-                <img 
-                  src="/ral-color-chart.jpg" 
-                  alt="RAL Color Chart for powder coating aluminum profiles - Zhongpu Aluminum" 
+                <OptimizedImage
+                  src="/ral-color-chart.jpg"
+                  alt="RAL Color Chart for powder coating aluminum profiles - Zhongpu Aluminum"
                   className="w-full h-full object-contain"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -326,14 +327,14 @@ const SurfaceFinishing = () => {
               Natural wood grain patterns for elegant surface finishes with a slight texture and matte sheen
             </p>
           </div>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-10 gap-4 max-w-6xl mx-auto">
             {/* Row 1 - Top Row */}
             <div className="flex flex-col items-center">
               <div className="w-full h-24 bg-gray-200 rounded-tl-lg rounded-br-lg mb-2 shadow-md relative overflow-hidden">
-                <img 
-                  src="/Atlantic-Cedar.jpg" 
-                  alt="Atlantic Cedar wood grain finish aluminum profile sample" 
+                <OptimizedImage
+                  src="/Atlantic-Cedar.jpg"
+                  alt="Atlantic Cedar wood grain finish aluminum profile sample"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -351,9 +352,9 @@ const SurfaceFinishing = () => {
 
             <div className="flex flex-col items-center">
               <div className="w-full h-24 bg-gray-200 rounded-tl-lg rounded-br-lg mb-2 shadow-md relative overflow-hidden">
-                <img 
-                  src="/Blackbutt.jpg" 
-                  alt="Blackbutt" 
+                <OptimizedImage
+                  src="/Blackbutt.jpg"
+                  alt="Blackbutt"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -371,9 +372,9 @@ const SurfaceFinishing = () => {
 
             <div className="flex flex-col items-center">
               <div className="w-full h-24 bg-gray-200 rounded-tl-lg rounded-br-lg mb-2 shadow-md relative overflow-hidden">
-                <img 
-                  src="/Bush-Cherry.jpg" 
-                  alt="Bush Cherry" 
+                <OptimizedImage
+                  src="/Bush-Cherry.jpg"
+                  alt="Bush Cherry"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -391,9 +392,9 @@ const SurfaceFinishing = () => {
 
             <div className="flex flex-col items-center">
               <div className="w-full h-24 bg-gray-200 rounded-tl-lg rounded-br-lg mb-2 shadow-md relative overflow-hidden">
-                <img 
-                  src="/Calm-Oak.jpg" 
-                  alt="Calm Oak" 
+                <OptimizedImage
+                  src="/Calm-Oak.jpg"
+                  alt="Calm Oak"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -411,9 +412,9 @@ const SurfaceFinishing = () => {
 
             <div className="flex flex-col items-center">
               <div className="w-full h-24 bg-gray-200 rounded-tl-lg rounded-br-lg mb-2 shadow-md relative overflow-hidden">
-                <img 
-                  src="/Chestnut.jpg" 
-                  alt="Chestnut" 
+                <OptimizedImage
+                  src="/Chestnut.jpg"
+                  alt="Chestnut"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -431,9 +432,9 @@ const SurfaceFinishing = () => {
 
             <div className="flex flex-col items-center">
               <div className="w-full h-24 bg-gray-200 rounded-tl-lg rounded-br-lg mb-2 shadow-md relative overflow-hidden">
-                <img 
-                  src="/Classic-oak.jpg" 
-                  alt="Classic Oak" 
+                <OptimizedImage
+                  src="/Classic-oak.jpg"
+                  alt="Classic Oak"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -451,9 +452,9 @@ const SurfaceFinishing = () => {
 
             <div className="flex flex-col items-center">
               <div className="w-full h-24 bg-gray-200 rounded-tl-lg rounded-br-lg mb-2 shadow-md relative overflow-hidden">
-                <img 
-                  src="/Eastern-Mahogany.jpg" 
-                  alt="Eastern Mahogany" 
+                <OptimizedImage
+                  src="/Eastern-Mahogany.jpg"
+                  alt="Eastern Mahogany"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -471,9 +472,9 @@ const SurfaceFinishing = () => {
 
             <div className="flex flex-col items-center">
               <div className="w-full h-24 bg-gray-200 rounded-tl-lg rounded-br-lg mb-2 shadow-md relative overflow-hidden">
-                <img 
-                  src="/Hickory.jpg" 
-                  alt="Hickory" 
+                <OptimizedImage
+                  src="/Hickory.jpg"
+                  alt="Hickory"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -491,9 +492,9 @@ const SurfaceFinishing = () => {
 
             <div className="flex flex-col items-center">
               <div className="w-full h-24 bg-gray-200 rounded-tl-lg rounded-br-lg mb-2 shadow-md relative overflow-hidden">
-                <img 
-                  src="/Iroko.jpg" 
-                  alt="Iroko" 
+                <OptimizedImage
+                  src="/Iroko.jpg"
+                  alt="Iroko"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -511,9 +512,9 @@ const SurfaceFinishing = () => {
 
             <div className="flex flex-col items-center">
               <div className="w-full h-24 bg-gray-200 rounded-tl-lg rounded-br-lg mb-2 shadow-md relative overflow-hidden">
-                <img 
-                  src="/Knotty-Pine.jpg" 
-                  alt="Knotty Pine" 
+                <OptimizedImage
+                  src="/Knotty-Pine.jpg"
+                  alt="Knotty Pine"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -532,9 +533,9 @@ const SurfaceFinishing = () => {
             {/* Row 2 - Bottom Row */}
             <div className="flex flex-col items-center">
               <div className="w-full h-24 bg-gray-200 rounded-tl-lg rounded-br-lg mb-2 shadow-md relative overflow-hidden">
-                <img 
-                  src="/Kwila.jpg" 
-                  alt="Kwila" 
+                <OptimizedImage
+                  src="/Kwila.jpg"
+                  alt="Kwila"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -552,9 +553,9 @@ const SurfaceFinishing = () => {
 
             <div className="flex flex-col items-center">
               <div className="w-full h-24 bg-gray-200 rounded-tl-lg rounded-br-lg mb-2 shadow-md relative overflow-hidden">
-                <img 
-                  src="/Light-Oak.jpg" 
-                  alt="Light Oak" 
+                <OptimizedImage
+                  src="/Light-Oak.jpg"
+                  alt="Light Oak"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -572,9 +573,9 @@ const SurfaceFinishing = () => {
 
             <div className="flex flex-col items-center">
               <div className="w-full h-24 bg-gray-200 rounded-tl-lg rounded-br-lg mb-2 shadow-md relative overflow-hidden">
-                <img 
-                  src="/Light-Walnut.jpg" 
-                  alt="Light Walnut" 
+                <OptimizedImage
+                  src="/Light-Walnut.jpg"
+                  alt="Light Walnut"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -592,9 +593,9 @@ const SurfaceFinishing = () => {
 
             <div className="flex flex-col items-center">
               <div className="w-full h-24 bg-gray-200 rounded-tl-lg rounded-br-lg mb-2 shadow-md relative overflow-hidden">
-                <img 
-                  src="/Maple.jpg" 
-                  alt="Maple" 
+                <OptimizedImage
+                  src="/Maple.jpg"
+                  alt="Maple"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -612,9 +613,9 @@ const SurfaceFinishing = () => {
 
             <div className="flex flex-col items-center">
               <div className="w-full h-24 bg-gray-200 rounded-tl-lg rounded-br-lg mb-2 shadow-md relative overflow-hidden">
-                <img 
-                  src="/Royal-Oak.jpg" 
-                  alt="Royal Oak" 
+                <OptimizedImage
+                  src="/Royal-Oak.jpg"
+                  alt="Royal Oak"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -632,9 +633,9 @@ const SurfaceFinishing = () => {
 
             <div className="flex flex-col items-center">
               <div className="w-full h-24 bg-gray-200 rounded-tl-lg rounded-br-lg mb-2 shadow-md relative overflow-hidden">
-                <img 
-                  src="/Spotted-Gum.jpg" 
-                  alt="Spotted Gum" 
+                <OptimizedImage
+                  src="/Spotted-Gum.jpg"
+                  alt="Spotted Gum"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -652,9 +653,9 @@ const SurfaceFinishing = () => {
 
             <div className="flex flex-col items-center">
               <div className="w-full h-24 bg-gray-200 rounded-tl-lg rounded-br-lg mb-2 shadow-md relative overflow-hidden">
-                <img 
-                  src="/Tassie-Oak.jpg" 
-                  alt="Tassie Oak" 
+                <OptimizedImage
+                  src="/Tassie-Oak.jpg"
+                  alt="Tassie Oak"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -672,9 +673,9 @@ const SurfaceFinishing = () => {
 
             <div className="flex flex-col items-center">
               <div className="w-full h-24 bg-gray-200 rounded-tl-lg rounded-br-lg mb-2 shadow-md relative overflow-hidden">
-                <img 
-                  src="/Teak-Brown.jpg" 
-                  alt="Teak Brown" 
+                <OptimizedImage
+                  src="/Teak-Brown.jpg"
+                  alt="Teak Brown"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -692,9 +693,9 @@ const SurfaceFinishing = () => {
 
             <div className="flex flex-col items-center">
               <div className="w-full h-24 bg-gray-200 rounded-tl-lg rounded-br-lg mb-2 shadow-md relative overflow-hidden">
-                <img 
-                  src="/Western-Red-Cedar.jpg" 
-                  alt="Western Red Cedar" 
+                <OptimizedImage
+                  src="/Western-Red-Cedar.jpg"
+                  alt="Western Red Cedar"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -712,9 +713,9 @@ const SurfaceFinishing = () => {
 
             <div className="flex flex-col items-center">
               <div className="w-full h-24 bg-gray-200 rounded-tl-lg rounded-br-lg mb-2 shadow-md relative overflow-hidden">
-                <img 
-                  src="/White-Ash.jpeg" 
-                  alt="White Ash" 
+                <OptimizedImage
+                  src="/White-Ash.jpeg"
+                  alt="White Ash"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -749,9 +750,9 @@ const SurfaceFinishing = () => {
             {/* First Row */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
               <div className="bg-gray-200 overflow-hidden relative" style={{ aspectRatio: '4/3' }}>
-                <img 
-                  src="/1.png" 
-                  alt="Brushed finish aluminum profile sample 1 - directional satin surface" 
+                <OptimizedImage
+                  src="/1.png"
+                  alt="Brushed finish aluminum profile sample 1 - directional satin surface"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -766,9 +767,9 @@ const SurfaceFinishing = () => {
 
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
               <div className="bg-gray-200 overflow-hidden relative" style={{ aspectRatio: '4/3' }}>
-                <img 
-                  src="/2.png" 
-                  alt="Brushed finish aluminum profile sample 2 - directional satin surface" 
+                <OptimizedImage
+                  src="/2.png"
+                  alt="Brushed finish aluminum profile sample 2 - directional satin surface"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -783,9 +784,9 @@ const SurfaceFinishing = () => {
 
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
               <div className="bg-gray-200 overflow-hidden relative" style={{ aspectRatio: '4/3' }}>
-                <img 
-                  src="/3.png" 
-                  alt="Brushed finish aluminum profile sample 3 - directional satin surface" 
+                <OptimizedImage
+                  src="/3.png"
+                  alt="Brushed finish aluminum profile sample 3 - directional satin surface"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -800,9 +801,9 @@ const SurfaceFinishing = () => {
 
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
               <div className="bg-gray-200 overflow-hidden relative" style={{ aspectRatio: '4/3' }}>
-                <img 
-                  src="/4.png" 
-                  alt="Brushed finish aluminum profile sample 4 - directional satin surface" 
+                <OptimizedImage
+                  src="/4.png"
+                  alt="Brushed finish aluminum profile sample 4 - directional satin surface"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -818,9 +819,9 @@ const SurfaceFinishing = () => {
             {/* Second Row */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
               <div className="bg-gray-200 overflow-hidden relative" style={{ aspectRatio: '4/3' }}>
-                <img 
-                  src="/5.png" 
-                  alt="Brushed Finish 5" 
+                <OptimizedImage
+                  src="/5.png"
+                  alt="Brushed Finish 5"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -835,9 +836,9 @@ const SurfaceFinishing = () => {
 
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
               <div className="bg-gray-200 overflow-hidden relative" style={{ aspectRatio: '4/3' }}>
-                <img 
-                  src="/6.png" 
-                  alt="Brushed Finish 6" 
+                <OptimizedImage
+                  src="/6.png"
+                  alt="Brushed Finish 6"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -852,9 +853,9 @@ const SurfaceFinishing = () => {
 
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
               <div className="bg-gray-200 overflow-hidden relative" style={{ aspectRatio: '4/3' }}>
-                <img 
-                  src="/7.png" 
-                  alt="Brushed Finish 7" 
+                <OptimizedImage
+                  src="/7.png"
+                  alt="Brushed Finish 7"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -869,9 +870,9 @@ const SurfaceFinishing = () => {
 
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
               <div className="bg-gray-200 overflow-hidden relative" style={{ aspectRatio: '4/3' }}>
-                <img 
-                  src="/8.png" 
-                  alt="Brushed Finish 8" 
+                <OptimizedImage
+                  src="/8.png"
+                  alt="Brushed Finish 8"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -984,4 +985,4 @@ const SurfaceFinishing = () => {
   )
 }
 
-export default SurfaceFinishing 
+export default SurfaceFinishing

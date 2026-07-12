@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+﻿import React, { useEffect, useState } from 'react'
 import {
   CheckCircle,
   Clock,
@@ -9,6 +9,7 @@ import {
   Send,
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead'
+import OptimizedImage from '../components/OptimizedImage'
 import Breadcrumb from '../components/Breadcrumb'
 import { trackEvent } from '../components/GoogleAnalyticsRouter'
 import { buildSiteUrl, COMPANY } from '../config/company'
@@ -356,7 +357,7 @@ const ContactPage = () => {
                   className="relative mb-6 h-64 w-full overflow-hidden rounded-lg bg-gray-200 text-left transition-opacity hover:opacity-90"
                   onClick={() => setIsMapModalOpen(true)}
                 >
-                  <img
+                  <OptimizedImage
                     src="/factory-map.png"
                     alt={`${COMPANY.name} factory location map`}
                     className="h-full w-full object-cover"

@@ -1,4 +1,4 @@
-# Dependencies
+﻿# Dependencies
 node_modules/
 npm-debug.log*
 yarn-debug.log*
@@ -59,3 +59,5 @@ jspm_packages/
 
 # Yarn Integrity file
 .yarn-integrity
+.codex-*.out
+.codex-*.err
