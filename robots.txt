@@ -1,4 +1,4 @@
-# Robots.txt for Zhongpu Aluminum - Professional Aluminum Profile Manufacturer
+﻿# Robots.txt for Zhongpu Aluminum - Professional Aluminum Profile Manufacturer
 User-agent: *
 Allow: /
 
@@ -6,6 +6,8 @@ Allow: /
 Allow: /images/
 Allow: /*.jpg
 Allow: /*.png
+Allow: /*.webp
+Allow: /*.avif
 Allow: /*.gif
 Allow: /*.css
 Allow: /*.js
